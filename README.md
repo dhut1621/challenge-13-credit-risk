@@ -1,7 +1,7 @@
 # challenge-13-credit-risk
 
 Background
-
+---
 You work as a risk management associate at Alphabet Soup, a venture capital firm. Alphabet Soup’s business team receives many funding applications from startups every day. This team has asked you to help them create a model that predicts whether applicants will be successful if funded by Alphabet Soup.
 
 The business team has given you a CSV file containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. The CSV file contains a variety of information about each business, including whether or not it ultimately became successful. With your knowledge of machine learning and neural networks, you decide to use the features in the provided dataset to create a binary classifier model that will predict whether an applicant will become a successful business.
@@ -18,7 +18,7 @@ Use the model-fit-predict pattern to compile and evaluate a binary classificatio
 Optimize the model.
 
 Instructions
-
+---
 The steps for this challenge are broken out into the following sections:
 
 Prepare the data for use on a neural network model.
@@ -40,8 +40,6 @@ Encode the dataset’s categorical variables using OneHotEncoder, and then place
 
 Add the original DataFrame’s numerical variables to the DataFrame containing the encoded variables.
 
-NOTE
-To complete this step, you will employ the Pandas concat() function that was introduced earlier in this course.
 
 Using the preprocessed data, create the features (X) and target (y) datasets. The target dataset should be defined by the preprocessed DataFrame column “IS_SUCCESSFUL”. The remaining columns should define the features dataset.
 
@@ -63,17 +61,7 @@ Evaluate the model using the test data to determine the model’s loss and accur
 Save and export your model to an HDF5 file, and name the file AlphabetSoup.h5.
 
 Optimize the Neural Network Model
-Using your knowledge of TensorFlow and Keras, optimize your model to improve the model's accuracy. Even if you do not successfully achieve a better accuracy, you'll need to demonstrate at least two attempts to optimize the model. You can include these attempts in your existing notebook. Or, you can make copies of the starter notebook in the same folder, rename them, and code each model optimization in a new notebook.
-
-Note
----
-You will not lose points if your model does not achieve a high accuracy, as long as you make at least two attempts to optimize the model.
-
-To do so, complete the following steps:
-
-Define at least two new deep neural network models (resulting in the original model, plus two optimization attempts). With each, try to improve on your first model’s predictive accuracy.
-REWIND
-Recall that perfect accuracy has a value of 1, so accuracy improves as its value moves closer to 1. To optimize your model for a predictive accuracy as close to 1 as possible, you can use any or all of the following techniques:
+Using your knowledge of TensorFlow and Keras, optimize your model to improve the model's accuracy. Even if you do not successfully achieve a better accuracy, you'll need to demonstrate at least two attempts to optimize the model. You can include these attempts in your existing notebook. Or, you can make copies of the starter notebook in the same folder, rename them, and code each model optimization in a new notebook
 
 Adjust the input data by dropping different features columns to ensure that no variables or outliers confuse the model.
 
